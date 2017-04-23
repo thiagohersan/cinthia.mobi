@@ -1,5 +1,6 @@
 <div id="navbar">
   <a class="menu-item menu-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <div id="hide-menu" class="menu-icon" onclick="hideMenu()">X</div>
 
   <div class="menu-item menu-subtitle">Projetos</div>
   {% for post in site.posts %}
@@ -13,4 +14,15 @@
   {% endfor %}
 </div>
 
-<div id="navbar-mobile" class="nav-container"></div>
+<script>
+  function showMenu() {
+    document.getElementById('navbar').style.left = '0';
+    document.getElementById('hide-menu').style.display = 'block';
+    document.getElementById('show-menu').style.display = 'none';
+  }
+
+  function hideMenu() {
+    document.getElementById('navbar').style.left = '-50%';
+    document.getElementById('show-menu').style.display = 'block';
+  }
+</script>

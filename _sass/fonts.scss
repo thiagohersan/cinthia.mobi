@@ -66,10 +66,14 @@ $LINK-SIZE: 1.7vw;
 
   #navbar {
     .menu-item {
-      font-size: $MENU-ITEM-SIZE;
+      font-size: 1.3rem;
       font-weight: 700;
       color: $MENU-TEXT-COLOR;
       text-transform: none;
+
+      @include media-query(DESKTOP) {
+        font-size: $MENU-TITLE-SIZE;
+      }
 
       &:visited {
         color: $MENU-TEXT-COLOR;
@@ -81,12 +85,14 @@ $LINK-SIZE: 1.7vw;
     }
 
     .menu-title {
+      font-size: 1.7rem;
       @include media-query(DESKTOP) {
         font-size: $MENU-TITLE-SIZE;
       }
     }
 
     .menu-subtitle {
+      font-size: 1.5rem;
       @include media-query(DESKTOP) {
         font-size: $MENU-SUBTITLE-SIZE + 0.5vw;
       }
@@ -104,6 +110,23 @@ $LINK-SIZE: 1.7vw;
         font-size: $MENU-ITEM-SIZE;
       }
     }
+  }
+
+  .menu-icon {
+    font: 900 1.3rem $FAMILY-SANS;
+    color: $LINK-COLOR;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color $TRANSITION-PERIOD linear;
+
+    &:hover {
+      color: $LINK-COLOR-HOVER;
+    }
+  }
+
+  #show-menu.menu-icon {
+    font: 900 2.5rem $FAMILY-SANS;
   }
 
   #post {
