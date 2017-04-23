@@ -84,13 +84,6 @@ $LINK-SIZE: 1.7vw;
       }
     }
 
-    .menu-title {
-      font-size: 1.7rem;
-      @include media-query(DESKTOP) {
-        font-size: $MENU-TITLE-SIZE;
-      }
-    }
-
     .menu-subtitle {
       font-size: 1.5rem;
       @include media-query(DESKTOP) {
@@ -112,8 +105,15 @@ $LINK-SIZE: 1.7vw;
     }
   }
 
+  .menu-title {
+    font-size: 1.7rem;
+    @include media-query(DESKTOP) {
+      font-size: $MENU-TITLE-SIZE;
+    }
+  }
+
   .menu-icon {
-    font: 900 1.3rem $FAMILY-SANS;
+    font: 900 1.5rem $FAMILY-SANS;
     color: $LINK-COLOR;
     cursor: pointer;
     text-decoration: none;

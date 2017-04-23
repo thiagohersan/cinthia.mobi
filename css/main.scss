@@ -27,9 +27,15 @@ body {
 #navbar-mobile {
   display: block;
   z-index: 10;
-  position: absolute;
-  top: 0;
-  left: $RESPONSIVE-SPACING / 2;
+  position: relative;
+  padding: $RESPONSIVE-SPACING / 2;
+  text-align: center;
+
+  #show-menu {
+    position: absolute;
+    left: 2 * $RESPONSIVE-SPACING;
+    top: -$RESPONSIVE-SPACING / 4;
+  }
 
   @include media-query(DESKTOP) {
     display: none;
@@ -79,6 +85,11 @@ body {
 
   .menu-title {
     padding-bottom: $RESPONSIVE-SPACING;
+    display: none;
+
+    @include media-query(DESKTOP) {
+      display: inherit;
+    }
   }
 
   .menu-subtitle {

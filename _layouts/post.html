@@ -8,10 +8,6 @@
     {% include navbar.html %}
     <div id="main-div">
       <div id="post">
-        <div id="navbar-mobile" class="nav-container">
-          <div id="show-menu" class="menu-icon" onclick="showMenu()">&#9776;</div>
-        </div>
-
         {% unless page.permalink == '/' %}
           <div class="post-title">{{ page.title }}</div>
         {% endunless %}
