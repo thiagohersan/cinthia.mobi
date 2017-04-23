@@ -98,7 +98,7 @@ $LINK-SIZE: 1.7vw;
       }
     }
 
-    .menu-item-post, menu-item-page {
+    .menu-item-post, .menu-item-page {
       @include media-query(DESKTOP) {
         font-size: $MENU-ITEM-SIZE;
       }
