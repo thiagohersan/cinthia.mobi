@@ -28,13 +28,13 @@ body {
   display: block;
   z-index: 10;
   position: relative;
-  padding: $RESPONSIVE-SPACING / 2;
+  padding: $RESPONSIVE-SPACING 0 $RESPONSIVE-SPACING / 2;
   text-align: center;
 
   #show-menu {
     position: absolute;
     left: 2 * $RESPONSIVE-SPACING;
-    top: -$RESPONSIVE-SPACING / 4;
+    top: 0;
   }
 
   @include media-query(DESKTOP) {
