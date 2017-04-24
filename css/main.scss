@@ -34,7 +34,7 @@ body {
   #show-menu {
     position: absolute;
     left: 2 * $RESPONSIVE-SPACING;
-    top: 0;
+    top: 0.5vw;
   }
 
   @include media-query(DESKTOP) {
