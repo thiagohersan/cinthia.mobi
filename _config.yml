@@ -24,6 +24,12 @@ defaults:
       path: ""
       type: "pages"
     values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
       cover: "/assets/covers/homecover.jpg"
 
 # Data
