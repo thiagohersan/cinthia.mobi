@@ -2,13 +2,9 @@
 
 $FAMILY-SANS: 'Raleway', 'Arial';
 
-$MENU-TITLE-SIZE: 2vw;
-$MENU-SUBTITLE-SIZE: 1.8vw;
-$MENU-ITEM-SIZE: 1.2vw;
-
-$MENU-TITLE-SIZE-MOBILE: 1.7rem;
-$MENU-SUBTITLE-SIZE-MOBILE: 1.5rem;
-$MENU-ITEM-SIZE-MOBILE: 1.3rem;
+$MENU-TITLE-SIZE: 1.1rem;
+$MENU-SUBTITLE-SIZE: 1.1rem;
+$MENU-ITEM-SIZE: 1rem;
 
 $TITLE-SIZE: 2.2vw;
 $TEXT-SIZE: 1.6vw;
@@ -22,11 +18,7 @@ $LINK-SIZE-MOBILE: 1rem;
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    font-size: 16px;
-    @include media-query(DESKTOP) {
-      font-size: 18px;
-    }
+    font-size: 18px;
   }
 
   body {
@@ -74,8 +66,8 @@ $LINK-SIZE-MOBILE: 1rem;
 
   #navbar {
     .menu-item {
-      font-size: $MENU-TITLE-SIZE-MOBILE;
-      font-weight: 700;
+      font-size: $MENU-TITLE-SIZE;
+      font-weight: 900;
       color: $MENU-TEXT-COLOR;
       text-transform: none;
 
@@ -93,11 +85,8 @@ $LINK-SIZE-MOBILE: 1rem;
     }
 
     .menu-subtitle {
-      font-size: $MENU-SUBTITLE-SIZE-MOBILE;
+      font-size: $MENU-SUBTITLE-SIZE;
       @include media-query(DESKTOP) {
-        font-size: $MENU-SUBTITLE-SIZE + 0.5vw;
-      }
-      @include media-query(LGDESKTOP) {
         font-size: $MENU-SUBTITLE-SIZE;
       }
 
@@ -107,18 +96,16 @@ $LINK-SIZE-MOBILE: 1rem;
     }
 
     .menu-item-post, .menu-item-page {
-      font-size: $MENU-ITEM-SIZE-MOBILE;
+      font-size: $MENU-ITEM-SIZE;
+      font-weight: normal;
       @include media-query(DESKTOP) {
-        font-size: $MENU-ITEM-SIZE + 0.5vw;
-      }
-      @include media-query(LGDESKTOP) {
         font-size: $MENU-ITEM-SIZE;
       }
     }
   }
 
   .menu-title {
-    font-size: $MENU-TITLE-SIZE-MOBILE;
+    font-size: $MENU-TITLE-SIZE;
     @include media-query(DESKTOP) {
       font-size: $MENU-TITLE-SIZE;
     }
