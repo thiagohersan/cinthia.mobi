@@ -6,9 +6,17 @@ $MENU-TITLE-SIZE: 2.8vw;
 $MENU-SUBTITLE-SIZE: 2vw;
 $MENU-ITEM-SIZE: 1.4vw;
 
+$MENU-TITLE-SIZE-MOBILE: 1.7rem;
+$MENU-SUBTITLE-SIZE-MOBILE: 1.5rem;
+$MENU-ITEM-SIZE-MOBILE: 1.3rem;
+
 $TITLE-SIZE: 2.2vw;
 $TEXT-SIZE: 1.6vw;
 $LINK-SIZE: 1.7vw;
+
+$TITLE-SIZE-MOBILE: 1.5rem;
+$TEXT-SIZE-MOBILE: 1rem;
+$LINK-SIZE-MOBILE: 1rem;
 
 @mixin fonts {
   html {
@@ -22,7 +30,7 @@ $LINK-SIZE: 1.7vw;
   }
 
   body {
-    font: normal 1rem $FAMILY-SANS;
+    font: normal $TEXT-SIZE-MOBILE $FAMILY-SANS;
     word-spacing: 3px;
     color: $TEXT-COLOR;
 
@@ -44,7 +52,7 @@ $LINK-SIZE: 1.7vw;
   }
 
   a {
-    font: 900 1rem $FAMILY-SANS;
+    font: 900 $LINK-SIZE-MOBILE $FAMILY-SANS;
     color: $LINK-COLOR;
     cursor: pointer;
     text-decoration: none;
@@ -66,7 +74,7 @@ $LINK-SIZE: 1.7vw;
 
   #navbar {
     .menu-item {
-      font-size: 1.3rem;
+      font-size: $MENU-TITLE-SIZE-MOBILE;
       font-weight: 700;
       color: $MENU-TEXT-COLOR;
       text-transform: none;
@@ -85,7 +93,7 @@ $LINK-SIZE: 1.7vw;
     }
 
     .menu-subtitle {
-      font-size: 1.5rem;
+      font-size: $MENU-SUBTITLE-SIZE-MOBILE;
       @include media-query(DESKTOP) {
         font-size: $MENU-SUBTITLE-SIZE + 0.5vw;
       }
@@ -99,6 +107,7 @@ $LINK-SIZE: 1.7vw;
     }
 
     .menu-item-post, .menu-item-page {
+      font-size: $MENU-ITEM-SIZE-MOBILE;
       @include media-query(DESKTOP) {
         font-size: $MENU-ITEM-SIZE + 0.5vw;
       }
@@ -109,7 +118,7 @@ $LINK-SIZE: 1.7vw;
   }
 
   .menu-title {
-    font-size: 1.7rem;
+    font-size: $MENU-TITLE-SIZE-MOBILE;
     @include media-query(DESKTOP) {
       font-size: $MENU-TITLE-SIZE;
     }
@@ -134,7 +143,7 @@ $LINK-SIZE: 1.7vw;
 
   #post {
     .post-title {
-      font: bold 1.5rem $FAMILY-SANS;
+      font: bold $TITLE-SIZE-MOBILE $FAMILY-SANS;
       color: $TITLE-COLOR;
       text-transform: uppercase;
       text-align: center;
