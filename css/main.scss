@@ -48,7 +48,7 @@ body {
 
   max-width: 50vw;
   position: fixed;
-  left: -50%;
+  left: -$MENU-WIDTH;
   padding: 2 * $RESPONSIVE-SPACING;
   transition: left 0.5s linear;
 
