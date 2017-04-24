@@ -54,9 +54,9 @@ body {
 
   @include media-query(DESKTOP) {
     display: block;
-    max-width: 30vw;
+    max-width: $MENU-WIDTH;
     left: 0;
-    padding: $RESPONSIVE-SPACING;
+    padding: $COLUMN-WIDTH / 10;
     transition: none;
   }
 
@@ -79,11 +79,11 @@ body {
   }
 
   .menu-item {
-    padding-bottom: $RESPONSIVE-SPACING / 2;
+    padding-bottom: $MENU-ITEM-SPACING;
   }
 
   .menu-title {
-    padding-bottom: $RESPONSIVE-SPACING;
+    padding-bottom: 4 * $MENU-ITEM-SPACING;
     display: none;
 
     @include media-query(DESKTOP) {
@@ -92,7 +92,7 @@ body {
   }
 
   .menu-subtitle {
-    padding-top: $RESPONSIVE-SPACING;
+    padding-top: 4 * $MENU-ITEM-SPACING;
   }
 }
 
@@ -108,7 +108,7 @@ body {
   @include media-query(DESKTOP) {
     width: 70vw - 2 * $RESPONSIVE-SPACING;
     margin: $RESPONSIVE-SPACING;
-    margin-left: 22vw;
+    margin-left: $MENU-WIDTH;
   }
 }
 
