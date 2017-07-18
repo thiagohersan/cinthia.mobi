@@ -47,7 +47,6 @@ prose:
     - _includes
     - _layouts
     - _pages/404.md
-    - _pages/about.md
     - _pages/index.md
     - _sass
     - css
