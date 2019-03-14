@@ -2,8 +2,8 @@
 title: Cinthia Mendonça
 
 # URL
-url: http://cinthia.mobi
-baseurl: '/cinthia.mobi'
+url: https://cinthia.ml
+baseurl: ''
 permalink: :title/
 include: ['_pages']
 
