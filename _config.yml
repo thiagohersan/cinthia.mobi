@@ -91,7 +91,7 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "nome do projeto"
+          label: "nome da página"
           placeholder: "Colocar Aqui o Nome Da Página"
       - name: "permalink"
         field:
